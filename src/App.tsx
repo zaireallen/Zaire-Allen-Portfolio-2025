@@ -1,12 +1,13 @@
-import { useState } from 'react'
 import './App.css'
+import { Timeline } from './components/ui/timeline'
+// Import timelineData directly from the module
+import { timelineData } from './lib/data/timeline'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  // Main application component that renders the timeline
   return (
     <>
-      <h1>Hello World</h1>
+      <Timeline data={timelineData} />
     </>
   )
 }
