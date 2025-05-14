@@ -1,4 +1,1 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-/* Note: The npm install command should be run in the terminal, not included in CSS */
+@import "tailwindcss";

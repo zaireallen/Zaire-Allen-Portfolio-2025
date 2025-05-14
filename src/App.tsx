@@ -1,13 +1,14 @@
 import './App.css'
-import { Timeline } from './components/ui/timeline'
-// Import timelineData directly from the module
-import { timelineData } from './lib/data/timeline'
+import { DotBackground } from './components/ui/DotBackground'
+import { Header } from './components/ui/Header'
 
 function App() {
   // Main application component that renders the timeline
   return (
     <>
-      <Timeline data={timelineData} />
+      <div className="flex flex-col items-center justify-center">
+        <DotBackground />
+      </div>
     </>
   )
 }
