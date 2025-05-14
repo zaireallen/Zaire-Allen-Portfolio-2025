@@ -1,6 +1,5 @@
 import './App.css'
 import { DotBackground } from './components/ui/DotBackground'
-import { Header } from './components/ui/Header'
 
 function App() {
   // Main application component that renders the timeline
