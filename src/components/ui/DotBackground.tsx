@@ -23,10 +23,6 @@ export function DotBackground() {
       <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black">
       </div>
       
-      <div className="flex flex-col w-3xl justify-center">
-        <Header />
-        <Timeline data={timelineData} />
-      </div>
     </div>
   );
 }
