@@ -3,6 +3,7 @@ export const timelineData = [
   // === 2025 =========================================================
   {
     title: "2025",
+    // image: images['/src/assets/timeline/2025.jpg'].default,
     content: `
 • Community Lead @ 96mins – driving programs that raise designers’ income and visibility.  
 • Building Fulcrum (AI-powered freelance job board) – first 500 beta users onboarded.  
