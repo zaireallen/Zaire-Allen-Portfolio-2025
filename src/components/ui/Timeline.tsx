@@ -29,7 +29,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["start end", "end start"],
+    offset: ["start 10%", "end start"],
   });
 
   const heightTransform = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
@@ -41,8 +41,8 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       ref={containerRef}
     >
       <div ref={ref} className="relative max-w-4xl mx-auto pb-4">
-        {/* Single vertical line between title and content */}
-        <div className="absolute left-32 top-0 h-full w-px bg-neutral-200 dark:bg-neutral-700 pointer-events-none z-0" />
+        {/* Full-height vertical line */}
+        <div className="absolute left-8 top-0 h-full w-px bg-neutral-200 dark:bg-neutral-700 pointer-events-none z-0" />
         {data.map((item, index) => (
           <div
             key={index}
@@ -70,7 +70,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
               )}
 
               {/* Timeline entry subtitle */}
-              <h2 className="text-slate-500 dark:text-slate-100 font-light text-xl max-w-4xl py-4"> 
+              <h2 className="text-slate-500 dark:text-slate-100 font-light text-2xl max-w-4xl pb-4"> 
                 {item.subtitle}
               </h2>
 
@@ -92,7 +92,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
               height: heightTransform,
               opacity: opacityTransform,
             }}
-            className="absolute inset-x-0 top-0  w-[2px] bg-gradient-to-t from-purple-500 via-blue-500 to-transparent from-[0%] via-[10%] rounded-full"
+            className="absolute inset-x-0 top-0  w-[2px] bg-gradient-to-t  from-[0%] via-[10%] rounded-full"
           />
         </div>
       </div>
