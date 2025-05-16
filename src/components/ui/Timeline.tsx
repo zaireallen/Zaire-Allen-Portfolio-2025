@@ -13,8 +13,6 @@ interface TimelineEntry {
   content: React.ReactNode;
 }
 
-import { cn } from "@/lib/utils";
-
 export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
   const ref = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);

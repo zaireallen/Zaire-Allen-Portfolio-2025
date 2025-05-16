@@ -1,7 +1,4 @@
 import { cn } from "@/lib/utils";
-import { Timeline } from "./Timeline";
-import { Header } from "./Header";
-import { timelineData } from "@/lib/data/timeline.js";
 
 export function DotBackground() {
   return (
