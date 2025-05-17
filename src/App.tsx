@@ -1,7 +1,6 @@
 import './App.css'
 import { Header } from './components/ui/Header'
 import { Timeline } from './components/ui/Timeline'
-import { timelineData } from './lib/data/timeline.ts'  
 
 function App() {
   // Main application component that renders the timeline
