@@ -10,8 +10,12 @@ export function Header() {
                 </h2> */}
                 <div className="flex flex-col gap-2">
                     <h1 className="text-slate-500 dark:text-slate-100 font-light text-2xl max-w-4xl pb-4">
-                        New York based Design Engineer. <br />
-                        Growth-driven. I build and like sales & marketing.
+                        New York based Design Engineer. 
+                        <br />
+                        I build and like sales & marketing.
+                        <br />
+                        Left the UK 2024 to work on ambitious projects.
+
                     </h1>
                 </div>
             </section>
@@ -27,8 +31,9 @@ export function Header() {
                     url="https://www.waypointdaily.com" 
                     imageSrc="src/assets/WaypointMeta.webp" 
                     isStatic>Waypoint</LinkPreview>.
-                </h1>
-                <h1 className="text-slate-500 dark:text-slate-100 font-light text-2xl max-w-4xl pb-4">
+
+                    <br />
+
                     Designer & Growth Consultant {" "}
 
                     <LinkPreview 
