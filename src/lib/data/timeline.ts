@@ -59,9 +59,9 @@ export const timelineData: TimelineEntry[] = [
     ],
     subtitle: "We were on a Times Square Billboard",
     content: [
-      "Back teaching again (part-time) at \"96mins.\" Couldn't resist the urge to help grow designers skills and income.",
-      "We won a Whop competition and ended up on a Times Square Billboard.",
-      "Currently building coding projects in my spare time. Trying to collect the last infinity stone by learning to code my own designs.",
+      "We hit Times Square after winning Whop’s $3k in 30 dayscompetition on a billboard.",
+      "Back to teaching. Couldn’t resist—now part-time at  \"96mins.\" helping designers level up their skills (and incomes).",
+      "Writing code in my spare time, hunting for the last Infinity Stone by shipping my own designs.",
 
     ]
   },
@@ -77,9 +77,9 @@ export const timelineData: TimelineEntry[] = [
     ],
     subtitle: "Left Manchester → Porto → Mallorca → Montserrat → Miami → Mexico → NYC",
     content: [
-      "Wound things down at Love Circular after dedicating 5 years to the project. It wasn't feasible to keep it going.",
+      "Wound things down at Love Circular. After five years, keeping it alive wasn’t feasible. It was a great run – over 300 students graduated and are now employed. Over 1,300 bootcamp and online course students.",
       "I was able to take a few months off to travel and recharge. I went to Porto, Mallorca, Montserrat, Miami, Mexico, eventually settling in New York City.",
-      "Running, bouldering and working out became a more regular part of my life. I ran a half-marathon to test my mental strength.",
+      "Took time off, recharged, ran a half-marathon for shits and giggles one morning, and got addicted to bouldering and weightlifting.",
     ]
   },
 
@@ -92,11 +92,11 @@ export const timelineData: TimelineEntry[] = [
       { src: Lanzarote2023, objectPosition: "0% 10%" },  
       { src: Spa2023, objectPosition: "0% 41%" },
     ],
-    subtitle: "First holiday since covid-19",
+    subtitle: "Firefighting & first holiday since covid-19",
     content: [
-      "Spent a lot of this year fighting fires – major setbacks with Love Circular. We lost $1.5M worth of assets and revenue.",
-      "Decided it was time for a holiday after being head-down for 2 years, ended up in Lanzarote with pals.",
-      "Recorded 30+ hours of vlog content for my YouTube channel documenting the journey of what goes on day-to-day as a founder.",
+      "Love Circular lost $1.5 M in assets and revenue—tough year.",
+      "Decided it was time for a holiday after 2 years head-down, escaped to Lanzarote to reset.",
+      "Uploaded 40+ hours of founder-life vlogs for my YouTube channel.",
     ]
   },
 
@@ -112,9 +112,9 @@ export const timelineData: TimelineEntry[] = [
     subtitle: "Hosted an event with Google & Pipe Advert",
     content: [
       "We hosted a Hakacthon with Google London, and invited some of our students to join.",
-      "Recorded an ad with Pipe as their first UK customer. We used Pipe to 4x revenue.",
-      "Hit 500 bootcamp students Love Circular.",
-      "Broke my elbow after an incredible bottle of Shiraz and a few Wagyu Beef Tataki."
+      "Starred as Pipe’s first UK customer; using it quadrupled revenue",
+      "Hit 500 students milestone at Love Circular.",
+      "Elbow meets Shiraz. One bottle + Wagyu tataki = broken elbow."
     ]
   },
 
@@ -130,7 +130,8 @@ export const timelineData: TimelineEntry[] = [
     ],
     subtitle: "New office, Burnout, Team Christmas Party",
     content: [
-      "Moved out of my bedroom office at my mum's to my first office in Manchester City Centre.",
+      "Moved from mum’s bedroom office to a proper Manchester city-centre space",
+      "Grew fast, hit our first £100 k month (£142 k during Black Friday week), and hired the first full-timers.",
       "I burned out and had to make my first set of full-time hires. Love Circular was growing fast, we made our first £100k month. £142k on Black Friday Week ",
       "We invited some of Love Circular students to our first team Christmas party."
     ]
@@ -148,11 +149,12 @@ export const timelineData: TimelineEntry[] = [
     ],
     subtitle: "A year of firsts",
     content: [
-      "Ali joined the Love Circular team as our first hire to teach our second cohort. In May, my first design student landed a role, 3 weeks before her cohort finished.",
-      "I bought my first \"fast\" car as a gift to myself. Did a 333 mile roadtrip from Manchester to Brighton. We had a 718 Cayman GTS, a Mustang GT and my Stage 1 S3.",
-      "Levi (my doggo and first companion) turned 1.",
-      "Made my gross yearly Design salary in 5 months since I went full-time on Love Circular in June.",
-      "First year being self-employed."
+      "First hire (Ali) to teach cohort #2.",
+      "My first design student landed a role, 3 weeks before her cohort finished.",
+      "First car road trip (333 mi Manchester → Brighton, Cayman GTS + Mustang GT + my Stage 1 S3)",
+      "Doggo Levi turned 1.",
+      "Matched my previous annual design salary in five months after going full-time.",
+      "First year self-employed."
     ]
   },
 
@@ -168,9 +170,9 @@ export const timelineData: TimelineEntry[] = [
     ],
     subtitle: "Apple → UX Designer. Love Circular. NYC",
     content: [
-      "I went from fixing iPhones and B2B Sales to my first design role at the UK's largest Mobile App agency.",
-      "It only took 2 months to land a job, so I thought I'd help others do the same. From Aug 19 - Jun 20 I mentored 40 designers each week around my full-time job.",
-      "Oh yea, it was my first time back in NYC 🗽 in 10 years."
+      "Went from fixing iPhones and B2B sales to UX design at the UK’s biggest mobile-app agency.",
+      "Landed the role fast (2 months), so I started mentoring—40 designers every week from Aug ’19 – Jun ’20",
+      "Oh yea, first time back in the Big Apple in ten years. 🗽"
     ]
   }
 ]; 

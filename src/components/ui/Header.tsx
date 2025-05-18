@@ -5,16 +5,16 @@ export function Header() {
         <header>
         <div className="max-w-7xl pt-20 px-4 md:px-8 lg:px-10 z-40">
             <section className="mt-10">
-                {/* <h2 className="text-xl tracking-normal font-light mb-2 text-slate-700 dark:text-slate-100 max-w-xl">
+                <h2 className="text-xl tracking-normal font-light mb-2 text-slate-700 dark:text-slate-100 max-w-xl">
                     Zaire Allen
-                </h2> */}
+                </h2>
                 <div className="flex flex-col gap-2">
                     <h1 className="text-slate-500 dark:text-slate-100 font-light text-2xl max-w-4xl pb-4">
-                        New York based Design Engineer. 
+                        New York City based Design Engineer. 
                         <br />
-                        I build and like sales & marketing.
+                        I build and nerd out on sales & marketing.
                         <br />
-                        Left the UK 2024 to work on ambitious projects.
+                        Left the UK in 2024 to chase ambitious projects.
 
                     </h1>
                 </div>
@@ -25,7 +25,7 @@ export function Header() {
                     Current
                 </h2>
                 <h1 className="text-slate-500 dark:text-slate-100 font-light text-2xl max-w-4xl pb-4">
-                    Sales & Marketing on {" "}
+                    Product & Growth Marketing at {" "}
 
                     <LinkPreview 
                     url="https://www.waypointdaily.com" 
@@ -34,7 +34,7 @@ export function Header() {
 
                     <br />
 
-                    Designer & Growth Consultant {" "}
+                    Designer Consultant {" "}
 
                     <LinkPreview 
                     url="https://www.bs-devshop.com/" 
