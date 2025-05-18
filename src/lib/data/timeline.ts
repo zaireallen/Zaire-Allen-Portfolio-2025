@@ -1,5 +1,7 @@
-import PipeZaire from '../../assets/PipeZaire.webp';
-import ThisIsHCD from '../../assets/ThisIsHCD.webp';
+// 2025
+import mins2025 from '../../assets/96mins2025.webp';
+import Event2025 from '../../assets/Event2025.webp';
+import Oysters2025 from '../../assets/Oysters2025.webp';
 
 // 2024
 import Montserrat2024 from '../../assets/Montserrat2024.webp';
@@ -17,7 +19,7 @@ import Spa2023 from '../../assets/Spa2023.webp';
 import Elbow2022 from '../../assets/Elbow2022.webp';
 import Google2022 from '../../assets/Google2022.webp';
 import LCTeamDinner2022 from '../../assets/LCTeamDinner2022.webp';
-import LeviAC2022 from '../../assets/LeviAC2022.webp';
+import FirstAd2022 from '../../assets/FirstAd2022.webp';
 
 
 // 2021
@@ -51,15 +53,16 @@ export const timelineData: TimelineEntry[] = [
   {
     title: "2025",
     images: [
-      { src: PipeZaire },
-      { src: ThisIsHCD },
-      { src: ZaireApple, objectPosition: "top" }
+      { src: mins2025, objectPosition: "0% 20%" },
+      { src: Event2025, objectPosition: "0% 45%" },
+      { src: Oysters2025, objectPosition: "0% 80%" },
     ],
-    subtitle: "Today",
+    subtitle: "We were on a Times Square Billboard",
     content: [
-      "Community Lead @ 96mins – driving programs that raise designers' income and visibility",
-      "Building Fulcrum (AI-powered freelance job board) – first 500 beta users onboarded",
-      "Doubled down on deep-dive Twitter/X threads about product-led growth and cold outreach"
+      "Back teaching again (part-time) at \"96mins.\" Couldn't resist the urge to help grow designers skills and income.",
+      "We won a Whop competition and ended up on a Times Square Billboard.",
+      "Currently building coding projects in my spare time. Trying to collect the last infinity stone by learning to code my own designs.",
+
     ]
   },
 
@@ -72,10 +75,11 @@ export const timelineData: TimelineEntry[] = [
       { src: Kirx2024, objectPosition: "0% 50%" },  
       { src: HalfM2024, objectPosition: "0% 100%" },
     ],
-    subtitle: "Moved to NYC, new beginnings",
+    subtitle: "Left Manchester → Porto → Mallorca → Montserrat → Miami → Mexico → NYC",
     content: [
-      "Published 12 personal-growth essays on Bear Blog with over 10k reads",
-      "Maintained 6-day/week strength-training routine; logged progress publicly to build audience accountability"
+      "Wound things down at Love Circular after dedicating 5 years to the project. It wasn't feasible to keep it going.",
+      "I was able to take a few months off to travel and recharge. I went to Porto, Mallorca, Montserrat, Miami, Mexico, eventually settling in New York City.",
+      "Running, bouldering and working out became a more regular part of my life. I ran a half-marathon to test my mental strength.",
     ]
   },
 
@@ -83,16 +87,16 @@ export const timelineData: TimelineEntry[] = [
   {
     title: "2023",
     images: [
-      { src: TheWeeknd2023, objectPosition: "0% 80%" },
-      { src: JobBoard2023, objectPosition: "0% 40%" },
+      { src: TheWeeknd2023, objectPosition: "0% 94%" },
+      { src: JobBoard2023, objectPosition: "0% 60%" },
       { src: Lanzarote2023, objectPosition: "0% 10%" },  
       { src: Spa2023, objectPosition: "0% 41%" },
     ],
-    subtitle: "The Weeknd, first holiday since Covid",
+    subtitle: "First holiday since covid-19",
     content: [
-      "Rebounded from a $1.5M IP loss; launched Profitable Club + Profitable Agency to help founders scale with outbound + content",
-      "Drafted the $2.5k/week luxury group-travel agency concept; ran first market-sizing and offer tests",
-      "Started tweeting daily \"micro-lessons\" on deal generation, growing X following past 4k"
+      "Spent a lot of this year fighting fires – major setbacks with Love Circular. We lost $1.5M worth of assets and revenue.",
+      "Decided it was time for a holiday after being head-down for 2 years, ended up in Lanzarote with pals.",
+      "Recorded 30+ hours of vlog content for my YouTube channel documenting the journey of what goes on day-to-day as a founder.",
     ]
   },
 
@@ -103,13 +107,14 @@ export const timelineData: TimelineEntry[] = [
       { src: Elbow2022, objectPosition: "0% 70%" },
       { src: Google2022, objectPosition: "0% 40%" },
       { src: LCTeamDinner2022, objectPosition: "0% 10%" },  
-      { src: LeviAC2022, objectPosition: "0% 41%" },
+      { src: FirstAd2022, objectPosition: "0% 31%" },
     ],
-    subtitle: "Broken bones, hosting events with Google",
+    subtitle: "Hosted an event with Google & Pipe Advert",
     content: [
-      "Took Love Circular's community-led ed-tech platform past $2M ARR; partnered with Google & KPMG on diversity hiring initiatives",
-      "Mentored 350+ students into UX / Product roles; cumulative learner earnings crossed $20M",
-      "Prototyped internal lead-gen SaaS tooling that later evolved into Profitable's service stack"
+      "We hosted a Hakacthon with Google London, and invited some of our students to join.",
+      "Recorded an ad with Pipe as their first UK customer. We used Pipe to 4x revenue.",
+      "Hit 500 bootcamp students Love Circular.",
+      "Broke my elbow after an incredible bottle of Shiraz and a few Wagyu Beef Tataki."
     ]
   },
 
@@ -125,9 +130,9 @@ export const timelineData: TimelineEntry[] = [
     ],
     subtitle: "New office, Burnout, Team Christmas Party",
     content: [
-      "Scaled Love Circular to seven-figure revenue; shipped revamped curriculum and async cohort model",
-      "Introduced \"squad\" delivery pods—precursor to today's client-growth squads at Profitable Agency",
-      "Spoke at three virtual design conferences on community-led growth and inclusive hiring"
+      "Moved out of my bedroom office at my mum's to my first office in Manchester City Centre.",
+      "I burned out and had to make my first set of full-time hires. Love Circular was growing fast, we made our first £100k month. £142k on Black Friday Week ",
+      "We invited some of Love Circular students to our first team Christmas party."
     ]
   },
 
@@ -143,9 +148,9 @@ export const timelineData: TimelineEntry[] = [
     ],
     subtitle: "A year of firsts",
     content: [
-      "Ali joined the Love Circular team as our first hire to teach our second cohort.",
+      "Ali joined the Love Circular team as our first hire to teach our second cohort. In May, my first design student landed a role, 3 weeks before her cohort finished.",
       "I bought my first \"fast\" car as a gift to myself. Did a 333 mile roadtrip from Manchester to Brighton. We had a 718 Cayman GTS, a Mustang GT and my Stage 1 S3.",
-      "Levi (my doggo) turned 1.",
+      "Levi (my doggo and first companion) turned 1.",
       "Made my gross yearly Design salary in 5 months since I went full-time on Love Circular in June.",
       "First year being self-employed."
     ]
@@ -157,9 +162,7 @@ export const timelineData: TimelineEntry[] = [
     images: [
       { src: ZaireApple, objectPosition: "0% 0%" },
       { src: ZaireA2019, objectPosition: "center" },
-      // { src: IzaacsHouse, objectPosition: "center" },
-      { src: IzaacZaireWeWork, objectPosition: "center" },  
-      // { src: Nyc2019, objectPosition: "center" },
+      { src: IzaacZaireWeWork, objectPosition: "center" },    
       { src: NycFultonStreet2019, objectPosition: "center" },
 
     ],
