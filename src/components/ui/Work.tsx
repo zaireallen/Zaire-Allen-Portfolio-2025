@@ -6,7 +6,7 @@ function Work() {
             <section className="mt-10">
                 {/* Grid of work items */}
                 <div className="flex flex-col gap-6">
-                    {workData.map((work) => (
+                    {[...workData].sort((a, b) => b.id - a.id).map((work) => (
                         <div key={work.id} className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             {work.images && work.images[0] && (
                                 <div className="aspect-[16/9] rounded-xl border border-slate-200 dark:border-neutral-700 dark:bg-neutral-900 overflow-hidden">

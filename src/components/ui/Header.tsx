@@ -70,10 +70,10 @@ export function Header() {
                     MouthWash
                     {", "}
                     <LinkPreview 
-                        href="https://www.pipe.com"
+                        href="https://pipe.com/resources/articles/love-circular-service-case-study"
                         target="_blank"
                         rel="noopener noreferrer"
-                        url="https://www.pipe.com" 
+                        url="https://pipe.com/resources/articles/love-circular-service-case-study" 
                         imageSrc="/assets/timeline/PipeZaire.webp" 
                         isStatic>Pipe</LinkPreview>.
                     
