@@ -1,7 +1,7 @@
 export function HeaderShort() {
     return (
         <header>
-        <div className="w-full max-w-2xl mx-auto pt-40 px-4 md:px-8 lg:px-10 z-40">
+        <div className="w-full max-w-2xl mx-auto pt-40 px-4 md:px-8 lg:px-10">
             <section className="mt-10">
                 <h2 className="text-xl tracking-normal font-light mb-2 text-slate-700 dark:text-slate-100 max-w-xl">
                     Hey ✌️

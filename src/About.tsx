@@ -6,14 +6,12 @@ import { PageTransition } from './components/PageTransition'
 
 function About() {
   return (
-    <div className="mx-auto flex flex-col items-center justify-center bg-[hsl(220,23%,97%)] dark:bg-neutral-950">
+    <div className="mx-auto flex flex-col bg-[hsl(220,23%,97%)] dark:bg-neutral-950">
       <NavBar />
-      <PageTransition>
-        <>
-          <Header />
+      <Header />
+        <PageTransition>
           <Timeline />
-        </>
-      </PageTransition>
+        </PageTransition>
     </div>
   )
 }

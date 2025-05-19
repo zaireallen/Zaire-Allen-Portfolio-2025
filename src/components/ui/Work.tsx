@@ -2,7 +2,7 @@ import { workData } from '@/lib/data/work'
 
 function Work() {
     return (
-        <div className="w-full pt-40 pb-6 px-2 md:px-8 lg:px-6">
+        <div className="w-full pt-32 pb-6 px-2 md:px-8 lg:px-6">
             <section className="mt-10">
                 {/* Grid of work items */}
                 <div className="flex flex-col gap-6">

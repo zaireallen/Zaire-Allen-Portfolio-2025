@@ -29,11 +29,12 @@ export function Header() {
                 </h2>
                 <h1 className="text-slate-500 dark:text-slate-100 font-light text-2xl pb-4">
                     Product & Growth Marketing at {" "}
-
-                    <LinkPreview 
-                    url="https://www.waypointdaily.com" 
-                    imageSrc="src/assets/work/Waypoint/Waypoint - Marketing Site - Desktop 1.webp" 
-                    isStatic>Waypoint</LinkPreview>.
+                    <a href="https://www.waypointdaily.com" target="_blank" rel="noopener noreferrer" className="transition-colors duration-200 hover:text-rose-600 dark:hover:text-rose-400 hover:underline">
+                      <LinkPreview 
+                        url="https://www.waypointdaily.com" 
+                        imageSrc="src/assets/work/Waypoint/Waypoint - Marketing Site - Desktop 1.webp" 
+                        isStatic>Waypoint</LinkPreview>
+                    </a>.
                 </h1>
             </section>
 
@@ -51,22 +52,20 @@ export function Header() {
                     Featured
                 </h2>
                 <h1 className="text-slate-500 dark:text-slate-100 font-light text-2xl pb-4">
-                    <LinkPreview 
+                    <a href="https://www.businessinsider.com/ux-designer-love-circular-tips-breaking-into-tech-2021-8" target="_blank" rel="noopener noreferrer" className="transition-colors duration-200 hover:text-rose-600 dark:hover:text-rose-400 hover:underline">
+                      <LinkPreview 
                         url="https://www.businessinsider.com/ux-designer-love-circular-tips-breaking-into-tech-2021-8" 
                         imageSrc="src/assets/ZaireAllenBusinessInsider.webp" 
-                        isStatic>Business Insider
-                    </LinkPreview>
-
+                        isStatic>Business Insider</LinkPreview>
+                    </a>
                     {", "}
-
-                    <LinkPreview 
+                    <a href="https://www.waypointdaily.com" target="_blank" rel="noopener noreferrer" className="transition-colors duration-200 hover:text-rose-600 dark:hover:text-rose-400 hover:underline">
+                      <LinkPreview 
                         url="https://www.waypointdaily.com" 
                         imageSrc="src/assets/timeline/PipeZaire.webp" 
-                        isStatic>Pipe
-                    </LinkPreview>
-
+                        isStatic>Pipe</LinkPreview>
+                    </a>
                     {", "}
-
                     MouthWash.
                 </h1>
             </section>
@@ -85,10 +84,12 @@ export function Header() {
                     Podcasts
                 </h2>
                 <h1 className="text-slate-500 dark:text-slate-100 font-light text-2xl pb-4">
-                    <LinkPreview 
-                    url="https://www.thisishcd.com/episode/zaire-allen-changing-the-face-of-design#transcript" 
-                    imageSrc="src/assets/ThisIsHCD.webp" 
-                    isStatic>This is Human Centered Design</LinkPreview>.
+                    <a href="https://www.thisishcd.com/episode/zaire-allen-changing-the-face-of-design#transcript" target="_blank" rel="noopener noreferrer" className="transition-colors duration-200 hover:text-rose-600 dark:hover:text-rose-400 hover:underline">
+                      <LinkPreview 
+                        url="https://www.thisishcd.com/episode/zaire-allen-changing-the-face-of-design#transcript" 
+                        imageSrc="src/assets/ThisIsHCD.webp" 
+                        isStatic>This is Human Centered Design</LinkPreview>
+                    </a>.
                 </h1>
             </section>
 
