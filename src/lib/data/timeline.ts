@@ -1,43 +1,43 @@
 // 2025
-import mins2025 from '../../assets/timeline/96mins2025.webp';
-import Event2025 from '../../assets/timeline/Event2025.webp';
-import Oysters2025 from '../../assets/timeline/Oysters2025.webp';
+// import mins2025 from '../../assets/timeline/96mins2025.webp';
+// import Event2025 from '../../assets/timeline/Event2025.webp';
+// import Oysters2025 from '../../assets/timeline/Oysters2025.webp';
 
 // 2024
-import Montserrat2024 from '../../assets/timeline/Montserrat2024.webp';
-import Bouldering2024 from '../../assets/timeline/Bouldering2024.webp';
-import Kirx2024 from '../../assets/timeline/Kirx2024.webp';
-import HalfM2024 from '../../assets/timeline/HalfM2024.webp';
+// import Montserrat2024 from '../../assets/timeline/Montserrat2024.webp';
+// import Bouldering2024 from '../../assets/timeline/Bouldering2024.webp';
+// import Kirx2024 from '../../assets/timeline/Kirx2024.webp';
+// import HalfM2024 from '../../assets/timeline/HalfM2024.webp';
 
 // 2023
-import TheWeeknd2023 from '../../assets/timeline/TheWeeknd2023.webp';
-import JobBoard2023 from '../../assets/timeline/JobBoard2023.webp';
-import Lanzarote2023 from '../../assets/timeline/Lanzarote2023.webp';
-import Spa2023 from '../../assets/timeline/Spa2023.webp';
+// import TheWeeknd2023 from '../../assets/timeline/TheWeeknd2023.webp';
+// import JobBoard2023 from '../../assets/timeline/JobBoard2023.webp';
+// import Lanzarote2023 from '../../assets/timeline/Lanzarote2023.webp';
+// import Spa2023 from '../../assets/timeline/Spa2023.webp';
 
 // 2022
-import Elbow2022 from '../../assets/timeline/Elbow2022.webp';
-import Google2022 from '../../assets/timeline/Google2022.webp';
-import LCTeamDinner2022 from '../../assets/timeline/LCTeamDinner2022.webp';
-import FirstAd2022 from '../../assets/timeline/FirstAd2022.webp';
+// import Elbow2022 from '../../assets/timeline/Elbow2022.webp';
+// import Google2022 from '../../assets/timeline/Google2022.webp';
+// import LCTeamDinner2022 from '../../assets/timeline/LCTeamDinner2022.webp';
+// import FirstAd2022 from '../../assets/timeline/FirstAd2022.webp';
 
 // 2021
-import Office22021 from '../../assets/timeline/Office22021.webp';
-import Burnout2021 from '../../assets/timeline/Burnout2021.webp';
-import Flok2021 from '../../assets/timeline/Flok2021.webp';
-import LCChristmas2021 from '../../assets/timeline/LCChristmas2021.webp';
+// import Office22021 from '../../assets/timeline/Office22021.webp';
+// import Burnout2021 from '../../assets/timeline/Burnout2021.webp';
+// import Flok2021 from '../../assets/timeline/Flok2021.webp';
+// import LCChristmas2021 from '../../assets/timeline/LCChristmas2021.webp';
 
 // 2020
-import AliZaire from '../../assets/timeline/AliZaire.webp';
-import Brighton from '../../assets/timeline/Brighton.webp';
-import LeviBirthday from '../../assets/timeline/LeviBirthday.webp';
-import LCRevenue from '../../assets/timeline/LCRevenue.webp';
+// import AliZaire from '../../assets/timeline/AliZaire.webp';
+// import Brighton from '../../assets/timeline/Brighton.webp';
+// import LeviBirthday from '../../assets/timeline/LeviBirthday.webp';
+// import LCRevenue from '../../assets/timeline/LCRevenue.webp';
 
 // 2019
-import ZaireApple from '../../assets/timeline/ZaireApple.webp';
-import NycFultonStreet2019 from '../../assets/timeline/NycFultonStreet2019.webp';
-import ZaireA2019 from '../../assets/timeline/ZaireA2019.webp';
-import IzaacZaireWeWork from '../../assets/timeline/IzaacZaireWeWork.webp';
+// import ZaireApple from '../../assets/timeline/ZaireApple.webp';
+// import NycFultonStreet2019 from '../../assets/timeline/NycFultonStreet2019.webp';
+// import ZaireA2019 from '../../assets/timeline/ZaireA2019.webp';
+// import IzaacZaireWeWork from '../../assets/timeline/IzaacZaireWeWork.webp';
 
 // Type definition for timeline entries
 export type TimelineEntry = {
@@ -52,9 +52,9 @@ export const timelineData: TimelineEntry[] = [
   {
     title: "2025",
     images: [
-      { src: mins2025, objectPosition: "0% 20%" },
-      { src: Event2025, objectPosition: "0% 45%" },
-      { src: Oysters2025, objectPosition: "0% 80%" },
+      { src: "/assets/timeline/96mins2025.webp", objectPosition: "0% 20%" },
+      { src: "/assets/timeline/Event2025.webp", objectPosition: "0% 45%" },
+      { src: "/assets/timeline/Oysters2025.webp", objectPosition: "0% 80%" },
     ],
     subtitle: "We were on a Times Square Billboard",
     content: [
@@ -69,10 +69,10 @@ export const timelineData: TimelineEntry[] = [
   {
     title: "2024",
     images: [
-      { src: Montserrat2024, objectPosition: "0% 60%" },
-      { src: Bouldering2024, objectPosition: "0% 40%" },
-      { src: Kirx2024, objectPosition: "0% 50%" },  
-      { src: HalfM2024, objectPosition: "0% 100%" },
+      { src: "/assets/timeline/Montserrat2024.webp", objectPosition: "0% 60%" },
+      { src: "/assets/timeline/Bouldering2024.webp", objectPosition: "0% 40%" },
+      { src: "/assets/timeline/Kirx2024.webp", objectPosition: "0% 50%" },  
+      { src: "/assets/timeline/HalfM2024.webp", objectPosition: "0% 100%" },
     ],
     subtitle: "Left Manchester → Porto → Mallorca → Montserrat → Miami → Mexico → NYC",
     content: [
@@ -86,10 +86,10 @@ export const timelineData: TimelineEntry[] = [
   {
     title: "2023",
     images: [
-      { src: TheWeeknd2023, objectPosition: "0% 94%" },
-      { src: JobBoard2023, objectPosition: "0% 60%" },
-      { src: Lanzarote2023, objectPosition: "0% 10%" },  
-      { src: Spa2023, objectPosition: "0% 41%" },
+      { src: "/assets/timeline/TheWeeknd2023.webp", objectPosition: "0% 94%" },
+      { src: "/assets/timeline/JobBoard2023.webp", objectPosition: "0% 60%" },
+      { src: "/assets/timeline/Lanzarote2023.webp", objectPosition: "0% 10%" },  
+      { src: "/assets/timeline/Spa2023.webp", objectPosition: "0% 41%" },
     ],
     subtitle: "Firefighting & first holiday since covid-19",
     content: [
@@ -103,10 +103,10 @@ export const timelineData: TimelineEntry[] = [
   {
     title: "2022",
     images: [
-      { src: Elbow2022, objectPosition: "0% 70%" },
-      { src: Google2022, objectPosition: "0% 40%" },
-      { src: LCTeamDinner2022, objectPosition: "0% 10%" },  
-      { src: FirstAd2022, objectPosition: "0% 31%" },
+      { src: "/assets/timeline/Elbow2022.webp", objectPosition: "0% 70%" },
+      { src: "/assets/timeline/Google2022.webp", objectPosition: "0% 40%" },
+      { src: "/assets/timeline/LCTeamDinner2022.webp", objectPosition: "0% 10%" },  
+      { src: "/assets/timeline/FirstAd2022.webp", objectPosition: "0% 31%" },
     ],
     subtitle: "Hosted an event with Google & Pipe Advert",
     content: [
@@ -121,10 +121,10 @@ export const timelineData: TimelineEntry[] = [
   {
     title: "2021",
     images: [
-      { src: Office22021, objectPosition: "0% 70%" },
-      { src: Burnout2021, objectPosition: "0% 50%" },
-      { src: Flok2021, objectPosition: "0% 10%" },  
-      { src: LCChristmas2021, objectPosition: "0% 41%" },
+      { src: "/assets/timeline/Office22021.webp", objectPosition: "0% 70%" },
+      { src: "/assets/timeline/Burnout2021.webp", objectPosition: "0% 50%" },
+      { src: "/assets/timeline/Flok2021.webp", objectPosition: "0% 10%" },  
+      { src: "/assets/timeline/LCChristmas2021.webp", objectPosition: "0% 41%" },
 
     ],
     subtitle: "New office, Burnout, Team Christmas Party",
@@ -140,10 +140,10 @@ export const timelineData: TimelineEntry[] = [
   {
     title: "2020",
     images: [
-      { src: AliZaire, objectPosition: "0% 0%" },
-      { src: Brighton, objectPosition: "0% 40%" },
-      { src: LeviBirthday, objectPosition: "0% 10%" },  
-      { src: LCRevenue, objectPosition: "0% 41%" },
+      { src: "/assets/timeline/AliZaire.webp", objectPosition: "0% 0%" },
+      { src: "/assets/timeline/Brighton.webp", objectPosition: "0% 40%" },
+      { src: "/assets/timeline/LeviBirthday.webp", objectPosition: "0% 10%" },  
+      { src: "/assets/timeline/LCRevenue.webp", objectPosition: "0% 41%" },
 
     ],
     subtitle: "A year of firsts",
@@ -161,10 +161,10 @@ export const timelineData: TimelineEntry[] = [
   {
     title: "2019",
     images: [
-      { src: ZaireApple, objectPosition: "0% 0%" },
-      { src: ZaireA2019, objectPosition: "center" },
-      { src: IzaacZaireWeWork, objectPosition: "center" },    
-      { src: NycFultonStreet2019, objectPosition: "center" },
+      { src: "/assets/timeline/ZaireApple.webp", objectPosition: "0% 0%" },
+      { src: "/assets/timeline/ZaireA2019.webp", objectPosition: "center" },
+      { src: "/assets/timeline/IzaacZaireWeWork.webp", objectPosition: "center" },    
+      { src: "/assets/timeline/NycFultonStreet2019.webp", objectPosition: "center" },
 
     ],
     subtitle: "Apple → UX Designer. Love Circular. NYC",
