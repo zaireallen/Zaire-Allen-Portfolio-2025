@@ -32,7 +32,7 @@ export function Header() {
                     <a href="https://www.waypointdaily.com" target="_blank" rel="noopener noreferrer" className="transition-colors duration-200 hover:text-rose-600 dark:hover:text-rose-400 hover:underline">
                       <LinkPreview 
                         url="https://www.waypointdaily.com" 
-                        imageSrc="src/assets/work/Waypoint/Waypoint - Marketing Site - Desktop 1.webp" 
+                        imageSrc="/assets/work/Waypoint/Waypoint - Marketing Site - Desktop 1.webp" 
                         isStatic>Waypoint</LinkPreview>
                     </a>.
                 </h1>
@@ -55,14 +55,14 @@ export function Header() {
                     <a href="https://www.businessinsider.com/ux-designer-love-circular-tips-breaking-into-tech-2021-8" target="_blank" rel="noopener noreferrer" className="transition-colors duration-200 hover:text-rose-600 dark:hover:text-rose-400 hover:underline">
                       <LinkPreview 
                         url="https://www.businessinsider.com/ux-designer-love-circular-tips-breaking-into-tech-2021-8" 
-                        imageSrc="src/assets/ZaireAllenBusinessInsider.webp" 
+                        imageSrc="/assets/ZaireAllenBusinessInsider.webp" 
                         isStatic>Business Insider</LinkPreview>
                     </a>
                     {", "}
                     <a href="https://www.waypointdaily.com" target="_blank" rel="noopener noreferrer" className="transition-colors duration-200 hover:text-rose-600 dark:hover:text-rose-400 hover:underline">
                       <LinkPreview 
                         url="https://www.waypointdaily.com" 
-                        imageSrc="src/assets/timeline/PipeZaire.webp" 
+                        imageSrc="/assets/timeline/PipeZaire.webp" 
                         isStatic>Pipe</LinkPreview>
                     </a>
                     {", "}
@@ -87,7 +87,7 @@ export function Header() {
                     <a href="https://www.thisishcd.com/episode/zaire-allen-changing-the-face-of-design#transcript" target="_blank" rel="noopener noreferrer" className="transition-colors duration-200 hover:text-rose-600 dark:hover:text-rose-400 hover:underline">
                       <LinkPreview 
                         url="https://www.thisishcd.com/episode/zaire-allen-changing-the-face-of-design#transcript" 
-                        imageSrc="src/assets/ThisIsHCD.webp" 
+                        imageSrc="/assets/ThisIsHCD.webp" 
                         isStatic>This is Human Centered Design</LinkPreview>
                     </a>.
                 </h1>
