@@ -31,7 +31,7 @@ export type DisplayWork = {
       id: 1,
       title: "Waypoint",
       images: [
-        { src: "/assets/work/Waypoint/Waypoint - Marketing Site - Desktop 1.webp", objectPosition: "0% 50%" },
+        { src: "/assets/work/Waypoint/Waypoint - Marketing Site - Desktop 1.webp", objectPosition: "0% 70%" },
         { src: "/assets/work/Waypoint/Waypoint - App - Desktop 1.webp", objectPosition: "0% 0%" }
       ],
       subtitle: "We were on a Times Square Billboard",

@@ -10,14 +10,20 @@ export function Header() {
                 </h2>
                 <div className="flex flex-col gap-2">
                     <h1 className="text-slate-500 dark:text-slate-100 font-light text-2xl pb-4">
-                        I'm a New York City based Design Engineer. 
+                        New York City–based design engineer 
 
                         <br /> <br />
 
                         I love product, sales & marketing.
                         
                         <br /> <br />
-                        Left the UK in 2024 to chase ambitious projects.
+                        Left the UK to chase ambitious projects in 2024.
+
+                        <br /> <br />
+                        Ran <a href="https://www.lovecircular.com" target="_blank" rel="noopener noreferrer" className="transition-colors duration-200 hover:text-rose-600 dark:hover:text-rose-400 underline">Love Circular</a> for six years—a product-design bootcamp that launched tech careers.
+                        <br /> <br />
+
+                        Graduates earned $30M in graduate salaries in 2024. Mission accomplished.
 
                     </h1>
                 </div>
@@ -61,15 +67,16 @@ export function Header() {
                         imageSrc="/assets/ZaireAllenBusinessInsider.webp" 
                         isStatic>Business Insider</LinkPreview>
                     {", "}
+                    MouthWash
+                    {", "}
                     <LinkPreview 
                         href="https://www.waypointdaily.com"
                         target="_blank"
                         rel="noopener noreferrer"
                         url="https://www.waypointdaily.com" 
                         imageSrc="/assets/timeline/PipeZaire.webp" 
-                        isStatic>Pipe</LinkPreview>
-                    {", "}
-                    MouthWash.
+                        isStatic>Pipe</LinkPreview>.
+                    
                 </h1>
             </section>
 
