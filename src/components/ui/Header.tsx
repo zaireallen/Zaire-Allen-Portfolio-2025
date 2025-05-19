@@ -10,11 +10,11 @@ export function Header() {
                 </h2>
                 <div className="flex flex-col gap-2">
                     <h1 className="text-slate-500 dark:text-slate-100 font-light text-2xl pb-4">
-                        New York City based Design Engineer. 
+                        I'm a New York City based Design Engineer. 
 
                         <br /> <br />
 
-                        Love being hands on with product, sales & marketing.
+                        I love product, sales & marketing.
                         
                         <br /> <br />
                         Left the UK in 2024 to chase ambitious projects.
