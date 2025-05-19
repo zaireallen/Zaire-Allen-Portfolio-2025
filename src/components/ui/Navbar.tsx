@@ -9,6 +9,7 @@ function Navbar() {
     const [githubHover, setGithubHover] = useState(false);
     const [emailCopied, setEmailCopied] = useState(false);
     const [emailHover, setEmailHover] = useState(false);
+    const [githubBtnHover, setGithubBtnHover] = useState(false);
     const email = "hey@zaireallen.com";
 
     // Helper to determine which link should show the indicator
@@ -27,58 +28,65 @@ function Navbar() {
                     <span className="text-sm font-medium text-slate-700 dark:text-slate-100 transition-colors hover:text-primary">
                         Zaire Allen
                     </span>
-                    <section className="flex items-center space-x-4 lg:space-x-6">
+                    <section className="flex items-center gap-2 md:gap-4 lg:gap-6">
+                        {/* Work Link */}
                         <div className="relative">
                             <Link 
                                 to="/" 
                                 onMouseEnter={() => setHovered('/')} 
                                 onMouseLeave={() => setHovered(null)}
-                                className={`text-sm font-medium transition-all duration-200 ease-in-out
+                                className={`text-xs md:text-sm font-medium transition-all duration-200 ease-in-out px-2 py-0.5 rounded cursor-pointer
                                     ${(location.pathname === '/' && !hovered) || hovered === '/' 
                                         ? 'text-slate-900 dark:text-white' 
-                                        : 'text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white'
-                                    }`}
+                                        : hovered === '/'
+                                            ? 'text-rose-600 dark:text-rose-400'
+                                            : 'text-slate-600 dark:text-slate-300 hover:text-rose-600 dark:hover:text-rose-400'}
+                                `}
                             >
                                 work
                             </Link>
                             {getIndicator('/') && indicatorPath === '/' && (
                                 <motion.div
                                     layoutId="nav-indicator"
-                                    className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-1 h-1 bg-slate-900 dark:bg-white rounded-full"
+                                    className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-1 h-1 bg-rose-600 dark:bg-rose-400 rounded-full"
                                     transition={{ type: 'spring', stiffness: 300, damping: 12, mass: 0.5 }}
                                 />
                             )}
                         </div>
+                        {/* Story Link */}
                         <div className="relative">
                             <Link 
                                 to="/about" 
                                 onMouseEnter={() => setHovered('/about')} 
                                 onMouseLeave={() => setHovered(null)}
-                                className={`text-sm font-medium transition-all duration-200 ease-in-out
+                                className={`text-xs md:text-sm font-medium transition-all duration-200 ease-in-out px-2 py-0.5 rounded cursor-pointer
                                     ${(location.pathname === '/about' && !hovered) || hovered === '/about' 
                                         ? 'text-slate-900 dark:text-white' 
-                                        : 'text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white'
-                                    }`}
+                                        : hovered === '/about'
+                                            ? 'text-rose-600 dark:text-rose-400'
+                                            : 'text-slate-600 dark:text-slate-300 hover:text-rose-600 dark:hover:text-rose-400'}
+                                `}
                             >
                                 story
                             </Link>
                             {getIndicator('/about') && indicatorPath === '/about' && (
                                 <motion.div
                                     layoutId="nav-indicator"
-                                    className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-1 h-1 bg-slate-900 dark:bg-white rounded-full"
+                                    className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-1 h-1 bg-rose-600 dark:bg-rose-400 rounded-full"
                                     transition={{ type: 'spring', stiffness: 300, damping: 12, mass: 0.5 }}
                                 />
                             )}
                         </div>
+                        {/* Email Me Button */}
                         <div className="relative">
                             <button
                                 onMouseEnter={() => setEmailHover(true)}
                                 onMouseLeave={() => setEmailHover(false)}
-                                className={`text-sm font-medium transition-all duration-200 ease-in-out
+                                className={`text-xs md:text-sm font-medium transition-all duration-200 ease-in-out px-2 py-0.5 rounded cursor-pointer
                                     ${emailHover
                                         ? 'text-rose-600 dark:text-rose-400'
                                         : 'text-slate-600 dark:text-slate-300 hover:text-rose-600 dark:hover:text-rose-400'}
-                                px-3 py-1 rounded-full bg-transparent border-none focus:outline-none`}
+                                `}
                                 onClick={async () => {
                                     await navigator.clipboard.writeText(email);
                                     setEmailCopied(true);
@@ -86,7 +94,7 @@ function Navbar() {
                                     setTimeout(() => setEmailCopied(false), 2000);
                                 }}
                             >
-                                {emailCopied ? 'email copied' : 'email me'}
+                                {emailCopied ? 'copied' : 'email'}
                             </button>
                             {emailHover && (
                                 <motion.div
@@ -96,28 +104,28 @@ function Navbar() {
                                 />
                             )}
                         </div>
-                        
+                        {/* Github Button */}
                         <div className="relative">
                             <a href="https://github.com/ZaireAllen" target="_blank" rel="noopener noreferrer">
                                 <button
-                                    className="relative inline-flex h-12 w-24 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
-                                    onMouseEnter={() => setGithubHover(true)}
-                                    onMouseLeave={() => setGithubHover(false)}
+                                    className={`text-xs md:text-sm font-medium transition-all duration-200 ease-in-out px-2 py-0.5 rounded cursor-pointer
+                                        ${githubBtnHover
+                                            ? 'text-rose-600 dark:text-rose-400'
+                                            : 'text-slate-600 dark:text-slate-300 hover:text-rose-600 dark:hover:text-rose-400'}
+                                    `}
+                                    onMouseEnter={() => setGithubBtnHover(true)}
+                                    onMouseLeave={() => setGithubBtnHover(false)}
                                 >
-                                    {!githubHover ? (
-                                        <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-                                    ) : (
-                                        <motion.div
-                                            layoutId="nav-indicator"
-                                            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-3 h-3 bg-slate-900 dark:bg-white rounded-full"
-                                            transition={{ type: 'spring', stiffness: 300, damping: 12, mass: 0.5 }}
-                                        />
-                                    )}
-                                    <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full dark:bg-slate-950 bg-slate-50 dark:text-neutral-100 text-slate-800 px-3 py-1 text-sm font-medium backdrop-blur-3xl">
-                                        github
-                                    </span>
+                                    github
                                 </button>
                             </a>
+                            {githubBtnHover && (
+                                <motion.div
+                                    layoutId="nav-indicator"
+                                    className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-1 h-1 bg-rose-600 dark:bg-rose-400 rounded-full"
+                                    transition={{ type: 'spring', stiffness: 300, damping: 12, mass: 0.5 }}
+                                />
+                            )}
                         </div>
                     </section>
                 </div>
