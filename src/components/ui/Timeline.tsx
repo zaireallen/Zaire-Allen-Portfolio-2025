@@ -2,6 +2,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useScroll, useTransform, motion } from "motion/react";
 import { timelineData } from "@/lib/data/timeline";
+import { ImageZoom } from "@/components/ui/kibo-ui/ImageZoom";
 
 export const Timeline = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -63,13 +64,15 @@ export const Timeline = () => {
                         : "grid grid-cols-2 gap-4 mb-4"}
                   >
                     {item.images.map((img, idx) => (
-                      <div key={idx} className="aspect-[4/3] w-full rounded-lg overflow-hidden bg-neutral-200 dark:bg-neutral-800">
-                        <img
-                          src={img.src}
-                          alt={`${item.title} image ${idx + 1}`}
-                          className={`object-cover w-full h-full${img.objectPosition && ["top", "center", "bottom", "left", "right"].includes(img.objectPosition) ? ` object-${img.objectPosition}` : ""}`}
-                          style={img.objectPosition && !["top", "center", "bottom", "left", "right"].includes(img.objectPosition) ? { objectPosition: img.objectPosition } : undefined} />
-                      </div>
+                      <ImageZoom key={idx}>
+                        <div className="aspect-[4/3] w-full rounded-lg overflow-hidden bg-neutral-200 dark:bg-neutral-800">
+                          <img
+                            src={img.src}
+                            alt={`${item.title} image ${idx + 1}`}
+                            className={`object-cover w-full h-full${img.objectPosition && ["top", "center", "bottom", "left", "right"].includes(img.objectPosition) ? ` object-${img.objectPosition}` : ""}`}
+                            style={img.objectPosition && !["top", "center", "bottom", "left", "right"].includes(img.objectPosition) ? { objectPosition: img.objectPosition } : undefined} />
+                        </div>
+                      </ImageZoom>
                     ))}
                   </div>
                 )}

@@ -3,7 +3,7 @@ import { LinkPreview } from "@/components/ui/LinkPreview";
 export function Header() {
     return (
         <header>
-        <div className="w-full max-w-2xl mx-auto pt-40 px-4 md:px-8 lg:px-10 z-40">
+        <div className="w-full max-w-2xl mx-auto  md:pt-40 pt-32 px-4 md:px-8 lg:px-10 z-40">
             <section className="mt-10">
                 <h2 className="text-xl tracking-normal font-light mb-2 text-slate-700 dark:text-slate-100 max-w-xl">
                     Zaire Allen
@@ -99,6 +99,11 @@ export function Header() {
                 </h2>
                 <h1 className="text-slate-500 dark:text-slate-100 font-light text-2xl pb-4">
                     <a href="mailto:hey@zaireallen.com">hey@zaireallen.com</a>
+                </h1>
+                <h1 className="text-slate-500 dark:text-slate-100 font-light text-2xl pb-4">
+                    <a href="https://twitter.com/___zca" target="_blank" rel="noopener noreferrer" className="transition-colors duration-200 hover:text-rose-600 dark:hover:text-rose-400 hover:underline underline">
+                        Twitter
+                    </a>
                 </h1>
             </section>
         </div>
