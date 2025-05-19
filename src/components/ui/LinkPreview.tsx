@@ -12,6 +12,9 @@ type LinkPreviewProps = {
   width?: number;      // default 200
   height?: number;     // default 125
   quality?: number;    // default 50
+  href?: string;
+  target?: string;
+  rel?: string;
 } & (
   | { isStatic: true;  imageSrc: string } // use your own JPG/PNG
   | { isStatic?: false; imageSrc?: never } // auto-gen via Microlink
@@ -26,6 +29,9 @@ export const LinkPreview = ({
   quality = 50,
   isStatic = false,
   imageSrc = "",
+  href,
+  target,
+  rel,
 }: LinkPreviewProps) => {
   // build Microlink screenshot URL if you’re not supplying a static image
   const src = isStatic
@@ -48,29 +54,34 @@ export const LinkPreview = ({
   const translateX = useSpring(x, { stiffness: 100, damping: 15 });
 
   return (
-    <HoverCard.Root openDelay={50} closeDelay={100} onOpenChange={setOpen}>
-      <HoverCard.Trigger
-        onMouseMove={(e) => {
-          const { left, width } = e.currentTarget.getBoundingClientRect();
-          x.set(((e.clientX - left) - width / 2) / 2);
-        }}
-        className={cn("underline", className)}
-      >
-        {children}
-      </HoverCard.Trigger>
+    <a
+      href={href || url}
+      target={target}
+      rel={rel}
+      className={cn("transition-colors duration-200 hover:text-rose-600 dark:hover:text-rose-400 hover:underline underline", className)}
+    >
+      <HoverCard.Root openDelay={50} closeDelay={100} onOpenChange={setOpen}>
+        <HoverCard.Trigger
+          onMouseMove={(e) => {
+            const { left, width } = e.currentTarget.getBoundingClientRect();
+            x.set(((e.clientX - left) - width / 2) / 2);
+          }}
+          asChild
+        >
+          <span className="underline">{children}</span>
+        </HoverCard.Trigger>
 
-      <HoverCard.Content side="top" align="center" sideOffset={10}>
-        <AnimatePresence>
-          {open && (
-            <motion.div
-              initial={{ opacity: 0, y: 20, scale: 0.6 }}
-              animate={{ opacity: 1, y: 0, scale: 1 }}
-              exit={{ opacity: 0, y: 20, scale: 0.6 }}
-              transition={{ type: "spring", stiffness: 260, damping: 20 }}
-              style={{ x: translateX }}
-              className="shadow-xl rounded-xl"
-            >
-              <a href={url} className="block p-1 bg-white rounded-xl">
+        <HoverCard.Content side="top" align="center" sideOffset={10}>
+          <AnimatePresence>
+            {open && (
+              <motion.div
+                initial={{ opacity: 0, y: 20, scale: 0.6 }}
+                animate={{ opacity: 1, y: 0, scale: 1 }}
+                exit={{ opacity: 0, y: 20, scale: 0.6 }}
+                transition={{ type: "spring", stiffness: 260, damping: 20 }}
+                style={{ x: translateX }}
+                className="shadow-xl rounded-xl"
+              >
                 <img
                   src={src}
                   width={width}
@@ -78,11 +89,11 @@ export const LinkPreview = ({
                   className="rounded-lg"
                   alt="preview"
                 />
-              </a>
-            </motion.div>
-          )}
-        </AnimatePresence>
-      </HoverCard.Content>
-    </HoverCard.Root>
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </HoverCard.Content>
+      </HoverCard.Root>
+    </a>
   );
 };
