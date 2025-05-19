@@ -1,11 +1,15 @@
 import { Link, useLocation } from 'react-router-dom'
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { toast } from 'sonner';
 
 function Navbar() {
     const location = useLocation();
     const [hovered, setHovered] = useState<string | null>(null);
     const [githubHover, setGithubHover] = useState(false);
+    const [emailCopied, setEmailCopied] = useState(false);
+    const [emailHover, setEmailHover] = useState(false);
+    const email = "hey@zaireallen.com";
 
     // Helper to determine which link should show the indicator
     const getIndicator = (path: string) => {
@@ -17,7 +21,7 @@ function Navbar() {
     const indicatorPath = hovered || location.pathname;
 
     return (
-        <nav className="max-w-sm mx-auto justify-center mt-12 fixed top-0 left-0 right-0 z-50 border-1 border rounded-full border-slate-200 dark:border-neutral-700 backdrop-blur-sm">
+        <nav className="max-w-xl mx-auto justify-center mt-12 fixed top-0 left-0 right-0 z-50 border-1 border rounded-full border-slate-200 dark:border-neutral-700 backdrop-blur-sm">
             <div className="flex h-16 items-center px-8">
                 <div className="flex items-center space-x-4 lg:space-x-6 justify-between w-full">
                     <span className="text-sm font-medium text-slate-700 dark:text-slate-100 transition-colors hover:text-primary">
@@ -66,6 +70,33 @@ function Navbar() {
                                 />
                             )}
                         </div>
+                        <div className="relative">
+                            <button
+                                onMouseEnter={() => setEmailHover(true)}
+                                onMouseLeave={() => setEmailHover(false)}
+                                className={`text-sm font-medium transition-all duration-200 ease-in-out
+                                    ${emailHover
+                                        ? 'text-rose-600 dark:text-rose-400'
+                                        : 'text-slate-600 dark:text-slate-300 hover:text-rose-600 dark:hover:text-rose-400'}
+                                px-3 py-1 rounded-full bg-transparent border-none focus:outline-none`}
+                                onClick={async () => {
+                                    await navigator.clipboard.writeText(email);
+                                    setEmailCopied(true);
+                                    toast.success('Email copied to clipboard!');
+                                    setTimeout(() => setEmailCopied(false), 2000);
+                                }}
+                            >
+                                {emailCopied ? 'email copied' : 'email me'}
+                            </button>
+                            {emailHover && (
+                                <motion.div
+                                    layoutId="nav-indicator"
+                                    className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-1 h-1 bg-rose-600 dark:bg-rose-400 rounded-full"
+                                    transition={{ type: 'spring', stiffness: 300, damping: 12, mass: 0.5 }}
+                                />
+                            )}
+                        </div>
+                        
                         <div className="relative">
                             <a href="https://github.com/ZaireAllen" target="_blank" rel="noopener noreferrer">
                                 <button
