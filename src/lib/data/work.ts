@@ -1,7 +1,10 @@
+// Waypoint
+import WaypointDesktop1 from '/src/assets/work/Waypoint/Waypoint - App - Desktop 1.webp'
+import WaypointDesktop2 from '/src/assets/work/Waypoint/Waypoint - Marketing Site - Desktop 1.webp'
+
 // RullowJacobs
 import RullowJacobsDesktop1 from '/src/assets/work/RullowJacobs/Rullow Jacobs-Desktop-1.webp'
 import RullowJacobsDesktop2 from '/src/assets/work/RullowJacobs/Rullow Jacobs-Desktop-2.webp'
-
 
 // SitesExplained
 // import SitesExplainedDesktop1 from '/src/assets/work/SitesExplained/sitesexplained-desktop-1.webp'
@@ -26,6 +29,21 @@ export type DisplayWork = {
   export const workData: DisplayWork[] = [
     {
       id: 1,
+      title: "Waypoint",
+      images: [
+        { src: WaypointDesktop2, objectPosition: "0% 50%" },
+        { src: WaypointDesktop1, objectPosition: "0% 0%" }
+      ],
+      subtitle: "We were on a Times Square Billboard",
+      content: [
+        "We hit Times Square after winning Whop’s $3k in 30 dayscompetition on a billboard.",
+        "Back to teaching. Couldn’t resist—now part-time at  \"96mins.\" helping designers level up their skills (and incomes).",
+        "Writing code in my spare time, hunting for the last Infinity Stone by shipping my own designs.",
+  
+      ]
+    },
+    {
+      id: 2,
       title: "Rullow Jacobs",
       images: [
         { src: RullowJacobsDesktop1, objectPosition: "0% 50%" },
@@ -40,7 +58,7 @@ export type DisplayWork = {
       ]
     },
     {
-      id: 2,
+      id: 3,
       title: "Sites Explained",
       images: [
         { src: SitesExplainedDesktop2, objectPosition: "0% 0%" },
@@ -54,7 +72,7 @@ export type DisplayWork = {
   
       ]
     },{
-      id: 3,
+      id: 4,
       title: "Love Circular Learning Platform Mobile App",
       images: [
         { src: LearningPlatform, objectPosition: "0% 0%" },
