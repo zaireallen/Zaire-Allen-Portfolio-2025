@@ -6,7 +6,7 @@ import { Timeline } from './components/ui/Timeline'
 function About() {
   return (
     <>
-      <div className="flex flex-col items-center justify-center bg-[hsl(220,23%,97%)] dark:bg-neutral-950">
+      <div className="mx-auto flex flex-col items-center justify-center bg-[hsl(220,23%,97%)] dark:bg-neutral-950">
         <NavBar />
         <Header />
         <Timeline />

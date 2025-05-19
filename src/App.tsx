@@ -1,7 +1,7 @@
 import './App.css'
 import NavBar from './components/ui/Navbar'
 import Work from './components/ui/Work'
-
+import { HeaderShort } from './components/ui/HeaderShort'
 function App() {
   
   // Main application component that renders the timeline
@@ -9,6 +9,7 @@ function App() {
     <>    
       <div className="mx-auto flex flex-col items-center justify-center bg-[hsl(220,23%,97%)] dark:bg-neutral-950">
         <NavBar />
+        <HeaderShort />
         <Work />
       </div>
     </>
