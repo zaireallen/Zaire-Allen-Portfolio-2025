@@ -25,7 +25,7 @@ export const Timeline = () => {
 
   return (
     <div className="w-full font-sans md:px-10" ref={containerRef}>
-      <div ref={ref} className="relative max-w-4xl mx-auto pb-4">
+      <div ref={ref} className="relative max-w-5xl mx-auto pb-4">
         {/* Full-height vertical line */}
         <div className="absolute left-8 top-0 h-full w-px bg-neutral-200 dark:bg-neutral-700 pointer-events-none z-0" />
         {timelineData.map((item, index) => {
