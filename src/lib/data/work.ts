@@ -1,5 +1,6 @@
-import LearningPlatform from '/src/assets/work/LC/Love Circular - Learning Platform - Mobile.png'
-import LearningPlatformSecond from '/src/assets/work/LC/Love Circular - Learning Platform - Mobile screens.png'
+import LearningPlatform from '/src/assets/work/LC/Love Circular - Learning Platform - Mobile.webp'
+import LearningPlatformSecond from '/src/assets/work/LC/Love Circular - Learning Platform - Mobile screens.webp'
+import SitesExplained1 from ''
 
 // Type definition for timeline entries
 export type DisplayWork = {
@@ -10,8 +11,7 @@ export type DisplayWork = {
     content: string[];
   };
   
-  export const DisplayWork: DisplayWork[] = [
-    // === 2025 =========================================================
+  export const workData: DisplayWork[] = [
     {
       id: 1,
       title: "Love Circular Learning Platform Mobile App",

@@ -1,5 +1,5 @@
 import './App.css'
-import NavBar from './components/ui/NavBar'
+import NavBar from './components/ui/Navbar'
 import { Header } from './components/ui/Header'
 import { Timeline } from './components/ui/Timeline'
 
