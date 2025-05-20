@@ -1,6 +1,12 @@
 import { LinkPreview } from "@/components/ui/LinkPreview";
+import { useState } from "react";
+import { toast } from "sonner";
 
 export function Header() {
+    const [emailCopied, setEmailCopied] = useState(false);
+    const [emailHover, setEmailHover] = useState(false);
+    const email = "hey@zaireallen.com";
+
     return (
         <header>
         <div className="w-full max-w-2xl mx-auto md:pt-40 pt-32 px-4 md:px-8 lg:px-10 z-40">
@@ -115,7 +121,30 @@ export function Header() {
                     Contact
                 </h2>
                 <h1 className="text-slate-500 dark:text-slate-100 font-light text-2xl pb-4">
-                    <a href="mailto:hey@zaireallen.com">hey@zaireallen.com</a>
+                    <span
+                        role="button"
+                        tabIndex={0}
+                        onMouseEnter={() => setEmailHover(true)}
+                        onMouseLeave={() => setEmailHover(false)}
+                        onClick={async () => {
+                            await navigator.clipboard.writeText(email);
+                            setEmailCopied(true);
+                            toast.success('Email copied to clipboard!');
+                            setTimeout(() => setEmailCopied(false), 2000);
+                        }}
+                        onKeyDown={async (e) => {
+                            if (e.key === 'Enter' || e.key === ' ') {
+                                await navigator.clipboard.writeText(email);
+                                setEmailCopied(true);
+                                toast.success('Email copied to clipboard!');
+                                setTimeout(() => setEmailCopied(false), 2000);
+                            }
+                        }}
+                        className={`transition-colors duration-200 hover:text-rose-600 dark:hover:text-rose-400 hover:underline underline cursor-pointer outline-none ${emailHover ? 'text-rose-600 dark:text-rose-400' : ''}`}
+                        aria-label="Copy email to clipboard"
+                    >
+                        {emailCopied ? 'copied!' : 'Get in touch via email'}
+                    </span>
                 </h1>
                 <h1 className="text-slate-500 dark:text-slate-100 font-light text-2xl pb-4">
                     <a href="https://twitter.com/___zca" target="_blank" rel="noopener noreferrer" className="transition-colors duration-200 hover:text-rose-600 dark:hover:text-rose-400 hover:underline underline">
