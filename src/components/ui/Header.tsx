@@ -10,17 +10,23 @@ export function Header() {
                 </h2>
                 <div className="flex flex-col gap-2">
                     <h1 className="text-slate-500 dark:text-slate-100 font-light text-2xl pb-4">
-                        New York City–based design engineer 
+                        New York City–based design engineer.
 
                         <br /> <br />
 
-                        I love product, sales & marketing.
+                        I build products, and love selling & marketing them.
                         
                         <br /> <br />
                         Left the UK to chase ambitious projects in 2024.
 
                         <br /> <br />
-                        Ran <a href="https://www.lovecircular.com" target="_blank" rel="noopener noreferrer" className="transition-colors duration-200 hover:text-rose-600 dark:hover:text-rose-400 underline">Love Circular</a> for six years—a product-design bootcamp that launched tech careers.
+                        Ran <LinkPreview 
+                            href="https://www.linkedin.com/company/lovecircular"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            url="https://www.linkedin.com/company/lovecircular"
+                            imageSrc="/assets/work/LC/lc-logo.png"
+                            isStatic>Love Circular</LinkPreview> for six years—a product-design bootcamp that launched tech careers.
                         <br /> <br />
 
                         Graduates earned $30M in graduate salaries in 2024. Mission accomplished.
@@ -40,7 +46,7 @@ export function Header() {
                         target="_blank"
                         rel="noopener noreferrer"
                         url="https://www.waypointdaily.com" 
-                        imageSrc="/assets/work/Waypoint/Waypoint - Marketing Site - Desktop 1.webp" 
+                        imageSrc="/assets/work/Waypoint/Waypoint - App - Desktop 1.webp" 
                         isStatic>Waypoint</LinkPreview>
                 </h1>
             </section>
