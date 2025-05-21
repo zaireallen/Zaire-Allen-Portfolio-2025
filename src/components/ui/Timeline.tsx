@@ -3,7 +3,6 @@ import { useEffect, useRef, useState } from "react";
 import { useScroll, useTransform, motion } from "motion/react";
 import { timelineData } from "@/lib/data/timeline";
 import { ImageZoom } from "@/components/ui/kibo-ui/ImageZoom";
-import { useInView } from 'framer-motion';
 
 export const Timeline = () => {
   const ref = useRef<HTMLDivElement>(null);
