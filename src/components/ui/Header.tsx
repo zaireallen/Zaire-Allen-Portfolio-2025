@@ -11,7 +11,7 @@ export function Header() {
         <header>
         <div className="w-full max-w-2xl mx-auto md:pt-40 pt-32 px-4 md:px-8 lg:px-10 z-40">
             <section className="mt-10">
-                <h2 className="text-xl tracking-normal font-light mb-2 text-slate-700 dark:text-slate-100 max-w-xl">
+                <h2 className="text-xl tracking-normal font-medium mb-2 text-slate-700 dark:text-slate-100 max-w-xl">
                     Zaire Allen
                 </h2>
                 <div className="flex flex-col gap-2">
@@ -42,11 +42,11 @@ export function Header() {
             </section>
 
             <section className="mt-10">
-                <h2 className="text-xl tracking-normal font-light mb-2 text-slate-700 dark:text-slate-100 max-w-xl">
+                <h2 className="text-xl tracking-normal font-medium mb-2 text-slate-700 dark:text-slate-100 max-w-xl">
                     Current
                 </h2>
                 <h1 className="text-slate-500 dark:text-slate-100 font-light text-2xl pb-4">
-                    Product & Growth Marketing at {" "}
+                    Design Engineer & Marketer at {" "}
                     <LinkPreview 
                         href="https://www.waypointdaily.com"
                         target="_blank"
@@ -58,7 +58,7 @@ export function Header() {
             </section>
 
             <section className="mt-10">
-                <h2 className="text-xl tracking-normal font-light mb-2 text-slate-700 dark:text-slate-100 max-w-xl">
+                <h2 className="text-xl tracking-normal font-medium mb-2 text-slate-700 dark:text-slate-100 max-w-xl">
                     Clients
                 </h2>
                 <h1 className="text-slate-500 dark:text-slate-100 font-light text-2xl pb-4">
@@ -67,7 +67,7 @@ export function Header() {
             </section>
 
             <section className="mt-10">
-                <h2 className="text-xl tracking-normal font-light mb-2 text-slate-700 dark:text-slate-100 max-w-xl">
+                <h2 className="text-xl tracking-normal font-medium mb-2 text-slate-700 dark:text-slate-100 max-w-xl">
                     Featured
                 </h2>
                 <h1 className="text-slate-500 dark:text-slate-100 font-light text-2xl pb-4">
@@ -93,7 +93,7 @@ export function Header() {
             </section>
 
             <section className="mt-10">
-                <h2 className="text-xl tracking-normal font-light mb-2 text-slate-700 dark:text-slate-100 max-w-xl">
+                <h2 className="text-xl tracking-normal font-medium mb-2 text-slate-700 dark:text-slate-100 max-w-xl">
                     Speaking
                 </h2>
                 <h1 className="text-slate-500 dark:text-slate-100 font-light text-2xl pb-4">
@@ -102,7 +102,7 @@ export function Header() {
             </section>
 
             <section className="mt-10">
-                <h2 className="text-xl tracking-normal font-light mb-2 text-slate-700 dark:text-slate-100 max-w-xl">
+                <h2 className="text-xl tracking-normal font-medium mb-2 text-slate-700 dark:text-slate-100 max-w-xl">
                     Podcasts
                 </h2>
                 <h1 className="text-slate-500 dark:text-slate-100 font-light text-2xl pb-4">
@@ -117,7 +117,7 @@ export function Header() {
             </section>
 
             <section className="mt-10">
-                <h2 className="text-xl tracking-normal font-light mb-2 text-slate-700 dark:text-slate-100 max-w-xl">
+                <h2 className="text-xl tracking-normal font-medium mb-2 text-slate-700 dark:text-slate-100 max-w-xl">
                     Contact
                 </h2>
                 <h1 className="text-slate-500 dark:text-slate-100 font-light text-2xl pb-4">

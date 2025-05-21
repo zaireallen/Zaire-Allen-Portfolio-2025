@@ -106,4 +106,5 @@ export type DisplayWork = {
         "Writing code in my spare time, hunting for the last Infinity Stone by shipping my own designs.",
       ]
     },
+    
   ];

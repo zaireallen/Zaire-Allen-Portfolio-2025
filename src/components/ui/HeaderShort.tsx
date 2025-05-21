@@ -3,7 +3,7 @@ export function HeaderShort() {
         <header>
         <div className="w-full max-w-2xl mx-auto md:pt-40 pt-32 px-4 md:px-8 lg:px-10">
             <section className="mt-10">
-                <h2 className="text-xl tracking-normal font-light mb-2 text-slate-700 dark:text-slate-100 max-w-xl">
+                <h2 className="text-xl tracking-normal font-medium mb-2 text-slate-700 dark:text-slate-100 max-w-xl">
                     Hey ✌️
                 </h2>
                 <div className="flex flex-col gap-2">
