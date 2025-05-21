@@ -46,10 +46,8 @@ export const Timeline = () => {
   }, []);
 
   return (
-    <div className="w-full font-sans md:pt-12 px-4 md:px-8 lg:px-10" ref={containerRef}>
+    <div className="w-full font-sans pt-32 md:pt-12 px-4 md:px-8 lg:px-10" ref={containerRef}>
       <div ref={ref} className="relative max-w-5xl mx-auto pb-4">
-        {/* Full-height vertical line - only on md+ */}
-        {/* <div className="absolute left-8 top-0 h-full w-px bg-neutral-200 dark:bg-neutral-700 pointer-events-none z-0 hidden md:block" /> */}
         {timelineData.map((item, index) => {
           return (
             <div key={index} ref={(el) => { yearRefs.current[index] = el }} className="flex justify-start pt-10 md:pt-40 md:gap-10">
