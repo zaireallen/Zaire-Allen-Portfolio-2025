@@ -8,14 +8,11 @@ export function HeaderShort() {
                 </h2>
                 <div className="flex flex-col gap-2">
                     <h1 className="text-slate-500 dark:text-slate-100 font-light text-2xl pb-4">
-                        I'm a New York City–based design engineer. 
+                        I'm a NYC–based design engineer.
 
                         <br /> <br />
 
-                        I build products, and love selling & marketing them.
-                        
-                        <br /> <br />
-                        Left the UK to chase ambitious projects in 2024.
+                        I build products, and love designing, selling and marketing them.
 
                     </h1>
                 </div>
