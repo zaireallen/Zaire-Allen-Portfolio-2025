@@ -9,7 +9,7 @@ export function Header() {
 
     return (
         <header>
-        <div className="w-full max-w-2xl mx-auto md:pt-40 pt-32 px-4 md:px-8 lg:px-10 z-40">
+        <div className="w-full max-w-2xl mx-auto md:pt-40 pt-32 md:pb-20 pb-16 px-4 md:px-8 lg:px-10 z-40">
             <section className="mt-10">
                 <h2 className="text-xl tracking-normal font-medium mb-2 text-slate-700 dark:text-slate-100 max-w-xl">
                     Experience and Achievements
@@ -35,7 +35,7 @@ export function Header() {
                             isStatic>Love Circular</LinkPreview> for six years—a product-design bootcamp that launched tech careers.
                         <br /> <br />
 
-                        Graduates earned $30M in graduate salaries in 2024. Mission accomplished.
+                        Graduates earned $30M in salaries in 2024. Mission accomplished.
 
                     </h1>
                 </div>
