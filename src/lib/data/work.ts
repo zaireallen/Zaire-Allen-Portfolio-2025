@@ -106,5 +106,18 @@ export type DisplayWork = {
         "Writing code in my spare time, hunting for the last Infinity Stone by shipping my own designs.",
       ]
     },
-    
+    {
+      id: 8,
+      title: "Caviar brand",
+      images: [
+        { src: "/assets/work/Misc/Caviar-Marketing.webp", objectPosition: "0% 0%" },
+        { src: "/assets/work/Misc/Caviar.webp", objectPosition: "0% 0%" }
+      ],
+      subtitle: "We were on a Times Square Billboard",
+      content: [
+        "We hit Times Square after winning Whop's $3k in 30 dayscompetition on a billboard.",
+        "Back to teaching. Couldn't resist—now part-time at  \"96mins.\" helping designers level up their skills (and incomes).",
+        "Writing code in my spare time, hunting for the last Infinity Stone by shipping my own designs.",
+      ]
+    },
   ];
