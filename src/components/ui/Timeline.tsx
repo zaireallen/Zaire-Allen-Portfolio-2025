@@ -87,6 +87,7 @@ export const Timeline = () => {
                         <motion.div
                           initial={{ rotate: 0, scale: 1 }}
                           animate={activeIndex === index ? { rotate: (idx % 2 === 0 ? -3 : 3) + idx, scale: 1.04 } : { rotate: 0, scale: 1 }}
+                          whileHover={{ rotate: 0, scale: 1.04 }}
                           transition={{ type: 'spring', stiffness: 120, damping: 14 }}
                           className="aspect-[4/3] w-full rounded-lg overflow-hidden bg-neutral-200 dark:bg-neutral-800"
                         >
