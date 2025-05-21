@@ -5,6 +5,7 @@ export type DisplayWork = {
     subtitle?: string;
     images?: { src: string; objectPosition?: string }[];
     content: string[];
+    url?: string;
   };
   
   export const workData: DisplayWork[] = [
@@ -20,7 +21,8 @@ export type DisplayWork = {
         "We hit Times Square after winning Whop's $3k in 30 dayscompetition on a billboard.",
         "Back to teaching. Couldn't resist—now part-time at  \"96mins.\" helping designers level up their skills (and incomes).",
         "Writing code in my spare time, hunting for the last Infinity Stone by shipping my own designs.",
-      ]
+      ],
+      url: ""
     },
     // {
     //   id: 2,
@@ -48,13 +50,14 @@ export type DisplayWork = {
         "We hit Times Square after winning Whop's $3k in 30 dayscompetition on a billboard.",
         "Back to teaching. Couldn't resist—now part-time at  \"96mins.\" helping designers level up their skills (and incomes).",
         "Writing code in my spare time, hunting for the last Infinity Stone by shipping my own designs.",
-      ]
+      ],
+      url: "https://www.rullowjacobs.com/"
     },
     {
       id: 4,
       title: "Grace O'Malley",
       images: [
-        { src: "/assets/work/Grace O Malley/rum-cask.png", objectPosition: "0% 0%" },
+        { src: "/assets/work/Grace O Malley/rum-cask.webp", objectPosition: "0% 0%" },
         { src: "/assets/work/Grace O Malley/Grace o Malley.gif", objectPosition: "0% 0%" }
       ],
       subtitle: "We were on a Times Square Billboard",
@@ -62,7 +65,8 @@ export type DisplayWork = {
         "We hit Times Square after winning Whop's $3k in 30 dayscompetition on a billboard.",
         "Back to teaching. Couldn't resist—now part-time at  \"96mins.\" helping designers level up their skills (and incomes).",
         "Writing code in my spare time, hunting for the last Infinity Stone by shipping my own designs.",
-      ]
+      ],
+      url: "https://graceomalleywhiskey.com/"
     },
     {
       id: 5,
@@ -90,7 +94,8 @@ export type DisplayWork = {
         "We hit Times Square after winning Whop's $3k in 30 dayscompetition on a billboard.",
         "Back to teaching. Couldn't resist—now part-time at  \"96mins.\" helping designers level up their skills (and incomes).",
         "Writing code in my spare time, hunting for the last Infinity Stone by shipping my own designs.",
-      ]
+      ],
+      url: "https://www.waypointdaily.com/"
     },
     {
       id: 7,
@@ -119,5 +124,20 @@ export type DisplayWork = {
         "Back to teaching. Couldn't resist—now part-time at  \"96mins.\" helping designers level up their skills (and incomes).",
         "Writing code in my spare time, hunting for the last Infinity Stone by shipping my own designs.",
       ]
+    },
+    {
+      id: 9,
+      title: "Love Circular Learning Platform",
+      images: [
+        { src: "/assets/work/LC/LC-Learning-Platform.webp", objectPosition: "0% 0%" },
+        { src: "/assets/work/LC/LC-Learning-Platform-2.webp", objectPosition: "0% 0%" }
+      ],
+      subtitle: "We were on a Times Square Billboard",
+      content: [
+        "We hit Times Square after winning Whop's $3k in 30 dayscompetition on a billboard.",
+        "Back to teaching. Couldn't resist—now part-time at  \"96mins.\" helping designers level up their skills (and incomes).",
+        "Writing code in my spare time, hunting for the last Infinity Stone by shipping my own designs.",
+      ],
+      url: "https://www.figma.com/design/97krlRIL5JgU3ahxpDDplh/Course-platform?node-id=0-1&t=Vbf8NXbBlb1xJQI4-1"
     },
   ];

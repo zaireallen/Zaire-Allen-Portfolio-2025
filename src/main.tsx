@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './index.css'
 import App from './App.tsx'
 import About from './About.tsx'
+import Exp from './Exp.tsx'
 import NotFoundPage from './NotFoundPage.tsx'
 import { Toaster } from './components/ui/sonner'
 import { PostHogProvider } from 'posthog-js/react'
@@ -11,6 +12,7 @@ import { PostHogProvider } from 'posthog-js/react'
 const router = createBrowserRouter([
   { path: '/', element: <App /> },
   { path: '/about', element: <About /> },
+  { path: '/exp', element: <Exp /> },
   { path: '*', element: <NotFoundPage /> }
 ])
 

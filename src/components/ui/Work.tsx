@@ -9,38 +9,39 @@ function Work() {
                 <div className="flex flex-col gap-6">
                     {[...workData].sort((a, b) => b.id - a.id).map((work) => (
                         <div key={work.id} className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            {work.images && work.images[0] && (
-                                <div className="aspect-[4/3] rounded-xl border border-slate-200 dark:border-neutral-700 dark:bg-white overflow-hidden flex justify-center items-center">
-                                    <ImageZoom>
-                                        <img 
-                                            src={work.images[0].src}
-                                            alt={work.title}
-                                            className="object-cover object-center w-full h-full transition-transform duration-300 hover:scale-102"
-                                        style={
-                                            work.images[0].objectPosition 
-                                                ? { objectPosition: work.images[0].objectPosition } 
-                                                : undefined
-                                        }
-                                        />
-                                    </ImageZoom>
-                                </div>
-                            )}
-                            {work.images && work.images[1] && (
-                                <div className="aspect-[4/3] rounded-xl border border-slate-200 dark:border-neutral-700 dark:bg-white overflow-hidden flex justify-center items-center">
-                                    <ImageZoom>
-                                        <img 
-                                            src={work.images[1].src}
-                                            alt={work.title}
-                                            className="object-cover object-center w-full h-full transition-transform duration-300 hover:scale-102"
-                                        style={
-                                            work.images[1].objectPosition 
-                                                ? { objectPosition: work.images[1].objectPosition } 
-                                                : undefined
-                                        }
-                                        />
-                                    </ImageZoom>    
-                                </div>
-                            )}
+                            {[0, 1].map((imgIdx) => (
+                                work.images && work.images[imgIdx] && (
+                                    <div key={imgIdx} className="aspect-[4/3] rounded-xl border border-slate-200 dark:border-neutral-700 dark:bg-white overflow-hidden flex justify-center items-center">
+                                        {work.url ? (
+                                            <a href={work.url} target="_blank" rel="noopener noreferrer" className="w-full h-full">
+                                                <img
+                                                    src={work.images[imgIdx].src}
+                                                    alt={work.title}
+                                                    className="object-cover object-center w-full h-full transition-transform duration-300 hover:scale-102 cursor-pointer"
+                                                    style={
+                                                        work.images[imgIdx].objectPosition
+                                                            ? { objectPosition: work.images[imgIdx].objectPosition }
+                                                            : undefined
+                                                    }
+                                                />
+                                            </a>
+                                        ) : (
+                                            <ImageZoom>
+                                                <img
+                                                    src={work.images[imgIdx].src}
+                                                    alt={work.title}
+                                                    className="object-cover object-center w-full h-full transition-transform duration-300 hover:scale-102"
+                                                    style={
+                                                        work.images[imgIdx].objectPosition
+                                                            ? { objectPosition: work.images[imgIdx].objectPosition }
+                                                            : undefined
+                                                    }
+                                                />
+                                            </ImageZoom>
+                                        )}
+                                    </div>
+                                )
+                            ))}
                         </div>
                     ))}
                 </div>

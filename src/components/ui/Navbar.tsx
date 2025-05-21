@@ -25,7 +25,7 @@ function Navbar() {
             <div className="flex h-16 items-center px-8">
                 <div className="flex items-center space-x-4 lg:space-x-6 justify-between w-full">
                     <span className="text-sm font-medium text-slate-700 dark:text-slate-100 transition-colors hover:text-primary">
-                        Zaire Allen
+                        Zaire
                     </span>
                     <section className="flex items-center gap-2 md:gap-4 lg:gap-6">
                         {/* Work Link */}
@@ -76,6 +76,31 @@ function Navbar() {
                                 />
                             )}
                         </div>
+                        {/* Experience Link */}
+                        <div className="relative">
+                            <Link
+                                to="/exp"
+                                onMouseEnter={() => setHovered('/experience')}
+                                onMouseLeave={() => setHovered(null)}
+                                className={`text-xs md:text-sm font-medium transition-all duration-200 ease-in-out px-2 py-0.5 rounded cursor-pointer
+                                    ${(location.pathname === '/experience' && !hovered) || hovered === '/experience'
+                                        ? 'text-slate-900 dark:text-white'
+                                        : hovered === '/experience'
+                                            ? 'text-rose-600 dark:text-rose-400'
+                                            : 'text-slate-600 dark:text-slate-300 hover:text-rose-600 dark:hover:text-rose-400'}
+                                `}
+                            >
+                                exp
+                            </Link>
+                            {getIndicator('/experience') && indicatorPath === '/experience' && (
+                                <motion.div
+                                    layoutId="nav-indicator"
+                                    className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-1 h-1 bg-rose-600 dark:bg-rose-400 rounded-full"
+                                    transition={{ type: 'spring', stiffness: 300, damping: 12, mass: 0.5 }}
+                                />
+                            )}
+                        </div>
+                        
                         {/* Email Me Button */}
                         <div className="relative">
                             <button
