@@ -24,20 +24,20 @@ export type DisplayWork = {
       ],
       url: ""
     },
-    // {
-    //   id: 2,
-    //   title: "Love Circular Year in Review 2023",
-    //   images: [
-    //     { src: "/assets/work/LC/LC 2023 in Review Site.gif", objectPosition: "0% 0%" },
-    //     { src: "/assets/work/LC/LC In Review 2023 Hire Count.webp", objectPosition: "0% 0%" }
-    //   ],
-    //   subtitle: "We were on a Times Square Billboard",
-    //   content: [
-    //     "We hit Times Square after winning Whop's $3k in 30 dayscompetition on a billboard.",
-    //     "Back to teaching. Couldn't resist—now part-time at  \"96mins.\" helping designers level up their skills (and incomes).",
-    //     "Writing code in my spare time, hunting for the last Infinity Stone by shipping my own designs.",
-    //   ]
-    // },
+    {
+      id: 2,
+      title: "Caviar brand",
+      images: [
+        { src: "/assets/work/Misc/Caviar-Marketing.webp", objectPosition: "0% 0%" },
+        { src: "/assets/work/Misc/Caviar.webp", objectPosition: "0% 0%" }
+      ],
+      subtitle: "We were on a Times Square Billboard",
+      content: [
+        "We hit Times Square after winning Whop's $3k in 30 dayscompetition on a billboard.",
+        "Back to teaching. Couldn't resist—now part-time at  \"96mins.\" helping designers level up their skills (and incomes).",
+        "Writing code in my spare time, hunting for the last Infinity Stone by shipping my own designs.",
+      ]
+    },
     {
       id: 3,
       title: "Rullow Jacobs",
@@ -55,10 +55,10 @@ export type DisplayWork = {
     },
     {
       id: 4,
-      title: "Grace O'Malley",
+      title: "Love Circular Learning Platform",
       images: [
-        { src: "/assets/work/Grace O Malley/rum-cask.webp", objectPosition: "0% 0%" },
-        { src: "/assets/work/Grace O Malley/Grace o Malley.gif", objectPosition: "0% 0%" }
+        { src: "/assets/work/LC/LC-Learning-Platform.webp", objectPosition: "0% 0%" },
+        { src: "/assets/work/LC/LC-Learning-Platform-2.webp", objectPosition: "0% 0%" }
       ],
       subtitle: "We were on a Times Square Billboard",
       content: [
@@ -66,7 +66,7 @@ export type DisplayWork = {
         "Back to teaching. Couldn't resist—now part-time at  \"96mins.\" helping designers level up their skills (and incomes).",
         "Writing code in my spare time, hunting for the last Infinity Stone by shipping my own designs.",
       ],
-      url: "https://graceomalleywhiskey.com/"
+      url: "https://www.figma.com/design/97krlRIL5JgU3ahxpDDplh/Course-platform?node-id=0-1&t=Vbf8NXbBlb1xJQI4-1"
     },
     {
       id: 5,
@@ -84,10 +84,10 @@ export type DisplayWork = {
     },
     {
       id: 6,
-      title: "Waypoint",
+      title: "Grace O'Malley",
       images: [
-        { src: "/assets/work/Waypoint/Waypoint Web App2.gif", objectPosition: "0% 70%" },
-        { src: "/assets/work/Waypoint/Waypoint - App - Desktop 1.webp", objectPosition: "0% 0%" }
+        { src: "/assets/work/Grace O Malley/rum-cask.webp", objectPosition: "0% 0%" },
+        { src: "/assets/work/Grace O Malley/Grace o Malley.gif", objectPosition: "0% 0%" }
       ],
       subtitle: "We were on a Times Square Billboard",
       content: [
@@ -95,7 +95,7 @@ export type DisplayWork = {
         "Back to teaching. Couldn't resist—now part-time at  \"96mins.\" helping designers level up their skills (and incomes).",
         "Writing code in my spare time, hunting for the last Infinity Stone by shipping my own designs.",
       ],
-      url: "https://www.waypointdaily.com/"
+      url: "https://graceomalleywhiskey.com/"
     },
     {
       id: 7,
@@ -113,24 +113,10 @@ export type DisplayWork = {
     },
     {
       id: 8,
-      title: "Caviar brand",
+      title: "Waypoint",
       images: [
-        { src: "/assets/work/Misc/Caviar-Marketing.webp", objectPosition: "0% 0%" },
-        { src: "/assets/work/Misc/Caviar.webp", objectPosition: "0% 0%" }
-      ],
-      subtitle: "We were on a Times Square Billboard",
-      content: [
-        "We hit Times Square after winning Whop's $3k in 30 dayscompetition on a billboard.",
-        "Back to teaching. Couldn't resist—now part-time at  \"96mins.\" helping designers level up their skills (and incomes).",
-        "Writing code in my spare time, hunting for the last Infinity Stone by shipping my own designs.",
-      ]
-    },
-    {
-      id: 9,
-      title: "Love Circular Learning Platform",
-      images: [
-        { src: "/assets/work/LC/LC-Learning-Platform.webp", objectPosition: "0% 0%" },
-        { src: "/assets/work/LC/LC-Learning-Platform-2.webp", objectPosition: "0% 0%" }
+        { src: "/assets/work/Waypoint/Waypoint Web App2.gif", objectPosition: "0% 70%" },
+        { src: "/assets/work/Waypoint/Waypoint - App - Desktop 1.webp", objectPosition: "0% 0%" }
       ],
       subtitle: "We were on a Times Square Billboard",
       content: [
@@ -138,6 +124,6 @@ export type DisplayWork = {
         "Back to teaching. Couldn't resist—now part-time at  \"96mins.\" helping designers level up their skills (and incomes).",
         "Writing code in my spare time, hunting for the last Infinity Stone by shipping my own designs.",
       ],
-      url: "https://www.figma.com/design/97krlRIL5JgU3ahxpDDplh/Course-platform?node-id=0-1&t=Vbf8NXbBlb1xJQI4-1"
+      url: "https://www.waypointdaily.com/"
     },
   ];
