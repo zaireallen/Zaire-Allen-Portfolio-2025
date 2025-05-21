@@ -2,6 +2,7 @@ import { Link, useLocation } from 'react-router-dom'
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { toast } from 'sonner';
+import { playClickSound } from '@/lib/data/sounds';
 
 function Navbar() {
     const location = useLocation();
@@ -20,6 +21,25 @@ function Navbar() {
     // The path for the indicator (hovered or active)
     const indicatorPath = hovered || location.pathname;
 
+    // DRY click handler for nav links
+    const handleLinkClick = () => {
+        playClickSound();
+    };
+
+    // Email click handler
+    const handleEmailClick = async () => {
+        try {
+            playClickSound();
+            await navigator.clipboard.writeText(email);
+            setEmailCopied(true);
+            toast.success('Email copied to clipboard!');
+        } catch (error) {
+            toast.error('Failed to copy email to clipboard');
+            console.error('Failed to copy email:', error);
+        }
+        setTimeout(() => setEmailCopied(false), 2000);
+    };
+
     return (
         <nav className="max-w-xl mx-auto flex items-center justify-center mt-12 fixed top-0 left-4 right-4 sm:left-4 sm:right-4 z-50 border-1 border rounded-full border-slate-200 dark:border-neutral-700 backdrop-blur-sm h-16">
             <div className="flex h-full items-center px-8 w-full">
@@ -34,6 +54,7 @@ function Navbar() {
                                 to="/" 
                                 onMouseEnter={() => setHovered('/')} 
                                 onMouseLeave={() => setHovered(null)}
+                                onClick={handleLinkClick}
                                 className={`text-xs md:text-sm font-medium transition-all duration-200 ease-in-out px-2 rounded cursor-pointer h-full flex items-center
                                     ${(location.pathname === '/' && !hovered) || hovered === '/' 
                                         ? 'text-slate-900 dark:text-white' 
@@ -58,6 +79,7 @@ function Navbar() {
                                 to="/exp"
                                 onMouseEnter={() => setHovered('/exp')}
                                 onMouseLeave={() => setHovered(null)}
+                                onClick={handleLinkClick}
                                 className={`text-xs md:text-sm font-medium transition-all duration-200 ease-in-out px-2 rounded cursor-pointer h-full flex items-center
                                     ${(location.pathname === '/exp' && !hovered) || hovered === '/exp'
                                         ? 'text-slate-900 dark:text-white'
@@ -82,6 +104,7 @@ function Navbar() {
                                 to="/about" 
                                 onMouseEnter={() => setHovered('/about')} 
                                 onMouseLeave={() => setHovered(null)}
+                                onClick={handleLinkClick}
                                 className={`text-xs md:text-sm font-medium transition-all duration-200 ease-in-out px-2 rounded cursor-pointer h-full flex items-center
                                     ${(location.pathname === '/about' && !hovered) || hovered === '/about' 
                                         ? 'text-slate-900 dark:text-white' 
@@ -100,7 +123,6 @@ function Navbar() {
                                 />
                             )}
                         </div>
-                        
                         {/* Email Me Button */}
                         <div className="relative h-full flex items-center">
                             <button
@@ -111,12 +133,7 @@ function Navbar() {
                                         ? 'text-rose-600 dark:text-rose-400'
                                         : 'text-slate-600 dark:text-slate-300 hover:text-rose-600 dark:hover:text-rose-400'}
                                 `}
-                                onClick={async () => {
-                                    await navigator.clipboard.writeText(email);
-                                    setEmailCopied(true);
-                                    toast.success('Email copied to clipboard!');
-                                    setTimeout(() => setEmailCopied(false), 2000);
-                                }}
+                                onClick={handleEmailClick}
                             >
                                 {emailCopied ? 'copied' : 'email'}
                             </button>
@@ -130,7 +147,7 @@ function Navbar() {
                         </div>
                         {/* Github Button */}
                         <div className="relative h-full flex items-center">
-                            <a href="https://github.com/ZaireAllen" target="_blank" rel="noopener noreferrer">
+                            <a href="https://github.com/ZaireAllen" target="_blank" rel="noopener noreferrer" onClick={handleLinkClick}>
                                 <button
                                     className={`text-xs md:text-sm font-medium transition-all duration-200 ease-in-out px-2 rounded cursor-pointer h-full flex items-center
                                         ${githubBtnHover
